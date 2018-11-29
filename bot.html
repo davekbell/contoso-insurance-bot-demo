@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <body onload="pageScroll()">
+    <div id="webchat"></div>
+    <script src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"></script>
+
+    <script type="text/javascript">
+
+    <!--
+
+    function pageScroll() {
+
+
+    window.scrollBy(0,50);
+
+    scrolldelay = setTimeout('pageScroll()',200); //Increase this # to slow down, decrease to speed up scrolling
+
+
+    }
+    </script>
+
+    <script>
+
+    const styleOptions = {
+      bubbleBackground: 'rgba(0, 0, 255, .1)',
+      bubbleFromUserBackground: 'rgba(0, 255, 0, .1)'
+    };
+
+      window.WebChat.renderWebChat({
+        directLine: window.WebChat.createDirectLine({ secret: 'BqmCvtRKIaY.cwA.BSg.YQgW3Wqjr7dEeEyiel8udtt8VGl-O6dpfPplMiTOsak' }),
+       styleOptions, botAvatarInitials: 'CB', backgroundColor: 'White', bubbleBorderRadius: 4,}, document.getElementById('webchat'));
+
+    </script>
+  </body>
+</html>
